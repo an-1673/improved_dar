@@ -24,7 +24,7 @@
         <div class="inner">
                 <a name="examples"></a>
                 <h3>Audio examples</h3>
-                    <p>The examples below demonstrate the generation of accompaniments given different contexts (rows) and references (columns). We use the DiT model which achieves best performance in the ablation experiments conducted in the paper. For listening purposes, we pan slightly the generated accompaniment to the left and the context to the right.</p></p>
+                <p>The examples below demonstrate the generation of accompaniments given different contexts (rows) and references (columns). We use the DiT model which achieves best performance in the ablation experiments conducted in the paper. For listening purposes, we pan slightly the generated accompaniment to the right and the context to the left.</p></p>
                 <table style="width:100%">
                   <tr>
                     <th style="width: 2%;"></th>
@@ -126,6 +126,66 @@
                       <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/violin_violin.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
                   </tr>
                 </table>
+
+                <p>The examples below demonstrate the generation of accompaniments given different contexts and text prompts. We use the DiT + CLAP<sub>β</sub> model which achieves best performance in the ablation experiments conducted in the paper. For listening purposes, we pan slightly the generated accompaniment to the right and the context to the left.</p></p>
+
+                <h4>Audio examples with text prompts</h4>
+                <table style="width:100%">
+                  <tr>
+                    <th colspan="2"; style="width: 10%; text-align: left; vertical-align: middle;">Prompt</th>
+                    <th style="width: 10%; text-align: center; vertical-align: middle;">CTX1</th>
+                    <th style="width: 10%; text-align: center; vertical-align: middle;">CTX2</th>
+                    <th style="width: 10%; text-align: center; vertical-align: middle;">CTX3</th>
+                  </tr>
+                  <tr>
+                    <th colspan="2"; style="width: 10%; text-align: right; vertical-align: middle;"></th>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/ctx1.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/ctx2.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/ctx3.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                  </tr>
+                <tr>
+                    <td colspan="2"><p>"bass, synth, electronic"</p></td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/bass_ctx1.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/bass_ctx2.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/bass_ctx3.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                 </tr>
+                    <td colspan="2"><p>"electric guitar, distortion pedal, solo"</p></td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/guitar_ctx1.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/guitar_ctx2.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/guitar_ctx3.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><p>"percussion, bongos, latin"</p></td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/drums_ctx1.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/drums_ctx2.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/drums_ctx3.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><p>"synth, pad"</p></td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/synth_ctx1.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/synth_ctx2.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/synth_ctx3.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><p>"grand piano, acoustic, pop"</p></td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/piano_ctx1.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/piano_ctx2.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/piano_ctx3.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><p>"violins, orchestral, ethereal"</p></td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/violin_ctx1.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/violin_ctx2.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/violin_ctx3.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><p>"organ, Hammond, warm, melodic"</p></td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/organ_ctx1.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/organ_ctx2.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/organ_ctx3.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                </tr>
+                </table>
+
 
                 </div>
                 <section id="two" class="wrapper style2 alt">
