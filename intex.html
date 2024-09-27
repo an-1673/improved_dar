@@ -1,0 +1,142 @@
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Improving Musical Accompaniment Co-creation via Diffusion Transformers</title>
+    <meta charset"utf-8" />
+    <meta name="viewport" content"width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/extra.css" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+  </head>
+  <body>
+    <!-- Banner -->
+    <section id="banner">
+      <div class="inner">
+        <section>
+          <h2>Improving Musical Accompaniment Co-creation via Diffusion Transformers</h2>
+          <h3>submitted to <i>NeurIPS 2024 Audio Imagination Workshop </i></h3>
+        </section>
+      </div>
+    </section>
+    <section id="two" class="wrapper style2 alt">
+        <div class="inner">
+                <a name="examples"></a>
+                <h3>Audio examples</h3>
+                    <p>The examples below demonstrate the generation of accompaniments given different contexts (rows) and references (columns). We use the DiT model which achieves best performance in the ablation experiments conducted in the paper. For listening purposes, we pan slightly the generated accompaniment to the left and the context to the right.</p></p>
+                <table style="width:100%">
+                  <tr>
+                    <th style="width: 2%;"></th>
+                    <th style="width: 10%; text-align: right; vertical-align: middle;">REF &rarr;</th>
+                    <th style="width: 10%; text-align: center; vertical-align: middle;">Bass</th>
+                    <th style="width: 10%; text-align: center; vertical-align: middle;">Drums</th>
+                    <th style="width: 10%; text-align: center; vertical-align: middle;">Flute</th>
+                    <th style="width: 10%; text-align: center; vertical-align: middle;">Guitar</th>
+                    <th style="width: 10%; text-align: center; vertical-align: middle;">Harp</th>
+                    <th style="width: 10%; text-align: center; vertical-align: middle;">Piano</th>
+                    <th style="width: 10%; text-align: center; vertical-align: middle;">Violin</th>
+                  </tr>
+                  <tr>
+                    <th style="vertical-align: bottom">&darr; CTX</th>
+                    <td style="vertical-align: middle; padding-top: 5px;"><b></b></td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/bass.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/drums.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/flute.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/guitar.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/harp.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/piano.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/violin.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align: middle; padding-top: 5px;"><b>Bass</b></td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/bass.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/bass_bass.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/bass_drums.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/bass_flute.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/bass_guitar.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/bass_harp.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/bass_piano.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/bass_violin.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align: middle; padding-top: 5px;"><b>Drums</b></td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/drums.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/drums_bass.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/drums_drums.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/drums_flute.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/drums_guitar.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/drums_harp.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/drums_piano.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                    <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/drums_violin.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                  </tr>
+                  <tr>
+                      <td style="vertical-align: middle; padding-top: 5px;"><b>Flute</b></td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/flute.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/flute_bass.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/flute_drums.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/flute_flute.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/flute_guitar.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/flute_harp.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/flute_piano.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/flute_violin.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                  </tr>
+                  <tr>
+                      <td style="vertical-align: middle; padding-top: 5px;"><b>Guitar</b></td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/guitar.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/guitar_bass.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/guitar_drums.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/guitar_flute.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/guitar_guitar.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/guitar_harp.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/guitar_piano.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/guitar_violin.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                  </tr>
+                  <tr>
+                      <td style="vertical-align: middle; padding-top: 5px;"><b>Harp</b></td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/harp.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/harp_bass.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/harp_drums.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/harp_flute.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/harp_guitar.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/harp_harp.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/harp_piano.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/harp_violin.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                  </tr>
+                  <tr>
+                      <td style="vertical-align: middle; padding-top: 5px;"><b>Piano</b></td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/piano.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/piano_bass.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/piano_drums.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/piano_flute.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/piano_guitar.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/piano_harp.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/piano_piano.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/piano_violin.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                  </tr>
+                  <tr>
+                      <td style="vertical-align: middle; padding-top: 5px;"><b>Violin</b></td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/violin.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/violin_bass.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/violin_drums.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/violin_flute.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/violin_guitar.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/violin_harp.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/violin_piano.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                      <td style="vertical-align: middle; text-align: center;"> <audio controls> <source src="assets/audio/violin_violin.flac" type="audio/flac"/> Your browser does not support the audio element. </audio> </td>
+                  </tr>
+                </table>
+
+                </div>
+                <section id="two" class="wrapper style2 alt">
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/extra.js"></script>
+
+  </body>
+</html>
